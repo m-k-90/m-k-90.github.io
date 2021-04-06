@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/m-k-90/m-k-90.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## April 06, 2021
+```{r, echo=FALSE}
+library(leaflet)
 
-### Jekyll Themes
+sfoIcons <- makeIcon(
+  iconUrl = c("https://pbs.twimg.com/profile_images/472454021320421376/h5ZSaPMd.jpeg",
+              "http://cdn.history.com/sites/2/2015/05/hith-golden-gate-144833144-E.jpeg",
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Alcatraz_Island_photo_D_Ramey_Logan.jpg/350px-Alcatraz_Island_photo_D_Ramey_Logan.jpg",
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/1_chinatown_san_francisco_arch_gateway.JPG/2560px-1_chinatown_san_francisco_arch_gateway.JPG",
+              "http://www.ghirardellisq.com/app/uploads/2014/07/ghirardelli-article-square1.jpg",
+              "https://25va3qc1hw-flywheel.netdna-ssl.com/wp-content/uploads/2011/03/Japanese-Tea-Garden.jpg"),
+  iconWidth = 41*215/230, iconHeight = 40,
+  iconAnchorX = 41*215/230/2, iconAnchorY = 40
+)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/m-k-90/m-k-90.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+sfoURLs <- c( "<a href='https://en.wikipedia.org/wiki/San_Francisco'>San Francisco, Californa</a>",
+              "<a href='https://en.wikipedia.org/wiki/Golden_Gate_Bridge'>Golden Gate Bridge</a>",
+              "<a href='https://en.wikipedia.org/wiki/Alcatraz_Island'>Alcatraz Island</a>",
+              "<a href='http://www.sanfranciscochinatown.com'>China Town</a>",
+              "<a href='https://en.wikipedia.org/wiki/Ghirardelli_Square'>Ghirardelli Square</a>",
+              "<a href='https://en.wikipedia.org/wiki/Golden_Gate_Park'>Golden Gate Park</a>")
 
-### Support or Contact
+sfoLatLong <- data.frame(
+  lat = c(37.7749, 37.8199, 37.8270, 37.7941, 37.8060, 37.7694),
+  lng = c(-122.4194, -122.4783, -122.4230, -122.4078, -122.4230, -122.4862))
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+sfoLatLong %>%
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers(icon = sfoIcons, popup=sfoURLs)
+```
+
+## San Francisco, California
