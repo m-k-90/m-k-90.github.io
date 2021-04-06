@@ -124,8 +124,8 @@ $(document).ready(function () {
 </div>
 
 
-<div id="december-12-2016" class="section level2">
-<h2>December 12, 2016</h2>
+<div id="april-06-2021" class="section level2">
+<h2>April 06, 2021</h2>
 <div id="htmlwidget-3d48475daa43e19c7875" style="width:672px;height:480px;" class="leaflet html-widget"></div>
 <script type="application/json" data-for="htmlwidget-3d48475daa43e19c7875">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap\u003c/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA\u003c/a>"}]},{"method":"addMarkers","args":[[37.7749,37.8199,37.827,37.7941,37.806,37.7694],[-122.4194,-122.4783,-122.423,-122.4078,-122.423,-122.4862],{"iconUrl":{"data":["https://pbs.twimg.com/profile_images/472454021320421376/h5ZSaPMd.jpeg","http://cdn.history.com/sites/2/2015/05/hith-golden-gate-144833144-E.jpeg","https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Alcatraz_Island_photo_D_Ramey_Logan.jpg/350px-Alcatraz_Island_photo_D_Ramey_Logan.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/1_chinatown_san_francisco_arch_gateway.JPG/2560px-1_chinatown_san_francisco_arch_gateway.JPG","http://www.ghirardellisq.com/app/uploads/2014/07/ghirardelli-article-square1.jpg","https://25va3qc1hw-flywheel.netdna-ssl.com/wp-content/uploads/2011/03/Japanese-Tea-Garden.jpg"],"index":[0,1,2,3,4,5]},"iconWidth":38.3260869565217,"iconHeight":40,"iconAnchorX":19.1630434782609,"iconAnchorY":40},null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<a href='https://en.wikipedia.org/wiki/San_Francisco'>San Francisco, Californa\u003c/a>","<a href='https://en.wikipedia.org/wiki/Golden_Gate_Bridge'>Golden Gate Bridge\u003c/a>","<a href='https://en.wikipedia.org/wiki/Alcatraz_Island'>Alcatraz Island\u003c/a>","<a href='http://www.sanfranciscochinatown.com'>China Town\u003c/a>","<a href='https://en.wikipedia.org/wiki/Ghirardelli_Square'>Ghirardelli Square\u003c/a>","<a href='https://en.wikipedia.org/wiki/Golden_Gate_Park'>Golden Gate Park\u003c/a>"],null,null]}],"limits":{"lat":[37.7694,37.827],"lng":[-122.4862,-122.4078]}},"evals":[],"jsHooks":[]}</script>
 </div>
@@ -163,4 +163,4 @@ $(document).ready(function () {
 
 </body>
 </html>
-## San Francisco, California
+
